@@ -1,0 +1,5 @@
+package com.paypal.training;
+
+public enum ConfigDepotEnum {
+
+}
