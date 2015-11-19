@@ -8,7 +8,7 @@ public class Stack<E> {
 	ArrayList<E> stack;
 	
 	public Stack() {
-		stack =new ArrayList<E>();
+		stack =new ArrayList<E>;
 	}
 
 	public void push(E obj) {

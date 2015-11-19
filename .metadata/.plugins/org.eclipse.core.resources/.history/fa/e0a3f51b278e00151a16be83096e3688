@@ -8,7 +8,7 @@ public class Stack<E> {
 	ArrayList<E> stack;
 	
 	public Stack() {
-		stack =new ArrayList<E>();
+		stack =new ArrayList<E>;
 	}
 
 	public void push(E obj) {
@@ -26,7 +26,7 @@ public class Stack<E> {
 		E value = stack.get(topIndex);
 		stack.remove(topIndex);
 		topIndex--;
-		return value;
+		return val;
 	}
 
 	public void popAll(Collection<? super E> dst) {

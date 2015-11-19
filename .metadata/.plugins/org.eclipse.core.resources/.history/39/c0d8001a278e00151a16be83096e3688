@@ -8,25 +8,15 @@ public class Stack<E> {
 	ArrayList<E> stack;
 	
 	public Stack() {
-		stack =new ArrayList<E>();
 	}
 
 	public void push(E obj) {
-		stack.add(obj);
-	    topIndex++;	
 	}
 
 	public void pushAll(Collection<? extends E> src) {
-	     for(E e:src){
-	    	 push(e);
-	     }
 	}
 	
 	public E pop() {
-		E value = stack.get(topIndex);
-		stack.remove(topIndex);
-		topIndex--;
-		return value;
 	}
 
 	public void popAll(Collection<? super E> dst) {
@@ -39,11 +29,9 @@ public class Stack<E> {
 	}
 	
 	public boolean isEmpty() {
-		return topIndex==-1;
 	}
 
 	public int size() {
-		return topIndex+1;
 	}
 
 	@Override

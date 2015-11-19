@@ -9,7 +9,7 @@ public class MenuItem {
 	private	double	price;
 
 	// TODO - Define a Map of <String, MenuItem> to use as a cache
-	static Map<String,MenuItem> menuItemMap = new HashMap<String,MenuItem>();
+	static Map<String,MenuItem> menuItemMap = new HashMap<String,Menu>();
 	
 	private	MenuItem(String	name,	double	price){
 		this.name = name;

@@ -9,20 +9,13 @@ public class MenuItem {
 	private	double	price;
 
 	// TODO - Define a Map of <String, MenuItem> to use as a cache
-	static Map<String,MenuItem> menuItemMap = new HashMap<String,MenuItem>();
 	
 	private	MenuItem(String	name,	double	price){
 		this.name = name;
 		this.price = price;
 	}
 	public	static	MenuItem	getMenuItem(String	name){
-		if(menuItemMap.containsKey(name)){
-			return menuItemMap.get(name);
-		}else{
-			MenuItem mi = new MenuItem(name, 20);
-			menuItemMap.put(name, mi);
-			return mi;
-		}
+		// TODO get from the cache if possible, else create a new MenuItem with price = 20
 	}
 	public	String	getName(){
 		return name;

@@ -11,13 +11,6 @@ public class Table {
 
 	
 	public static Table	getTable(int number){
-		if(tableMap.containsKey(number)){
-			return tableMap.get(number);
-		}else{
-			Table table = new Table(number, 20);
-			tableMap.put(number,table);
-			return table;
-		}	
 	}
 	
 	private	Table(int	number,	int	numberOfSeats){

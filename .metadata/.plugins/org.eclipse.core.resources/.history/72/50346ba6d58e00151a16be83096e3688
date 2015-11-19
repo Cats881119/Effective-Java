@@ -17,9 +17,6 @@ public class Order {
 		this.customerName = customerName;
 	}
 	public	Order(String	customerName,	List<OrderItem>	items,	Table	table){
-		this.customerName = customerName;
-		this.orderItems = items;
-		this.table = table;
 	}
 	public	String	getCustomerName(){
 		return customerName;
@@ -49,14 +46,6 @@ public class Order {
 	}
 	
 	public	double	getTotalPrice(){
-		double total = 0.0;
-		Iterator<OrderItem> orderItemIter = orderItems.iterator();
-		while(orderItemIter.hasNext()){
-			OrderItem orderItem = orderItemIter.next();
-			MenuItem menuItem = orderItem.getItem();
-			total += menuItem.getPrice();
-		}
-		return total;
 	}
 
 	@Override

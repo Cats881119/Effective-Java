@@ -8,10 +8,8 @@ public class InstrumentedRot13 implements EncryptionStrategy{
 	}
 	@Override
 	public String encrypt(String clearText) {
-	    long start = System.currentTimeMillis();
+		// TODO - determine how long it takes to do the encryption
 		String ret = stat.encrypt(clearText);
-		long end = System.currentTimeMillis();
-		System.out.println(start-end);
 		return ret;
 	}
 }

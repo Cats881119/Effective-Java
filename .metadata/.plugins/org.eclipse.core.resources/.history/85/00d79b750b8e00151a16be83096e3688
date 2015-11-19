@@ -16,19 +16,6 @@ public class Employee {
 
 	 @Override
 	public boolean equals(Object obj) {
-		 if(obj==null){
-			 return false;
-		 }else if(obj==this){
-			 return true;
-		 }
-	     Employee emp=(Employee) obj;
-		 
-		 return this.employeeNumber.equals(emp.employeeNumber)&&
-				 this.firstName.equals(emp.firstName)&&
-				 this.lastName.equals(emp.lastName)&&
-				 this.dob.equals(emp.dob)&&
-				 Double.doubleToLongBits(this.salary)==Double.doubleToLongBits(emp.salary);
-		 
 	}
 	 
 	 
@@ -43,16 +30,6 @@ public class Employee {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((dob == null) ? 0 : dob.hashCode());
-		result = prime * result
-				+ ((employeeNumber == null) ? 0 : employeeNumber.hashCode());
-		result = prime * result
-				+ ((firstName == null) ? 0 : firstName.hashCode());
-		result = prime * result
-				+ ((lastName == null) ? 0 : lastName.hashCode());
-		long temp;
-		temp = Double.doubleToLongBits(salary);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
